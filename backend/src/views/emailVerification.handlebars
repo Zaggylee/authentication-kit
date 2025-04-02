@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="color-primary">{{subject}}</h2>
+      <hr />
+      <p> Hello {{name}}</p>
+      <p>please use the url below to verify your account.
+        <br />
+        this link is valid for 24 hours</p>
+      <a href={{link}} class="btn-link"><b>verify account</b></a>
+
+      <p style="margin-bottom: 50px">
+        if you did not create an account you can ignore this email</p>
+      <hr />
+      <p>Regards,</p>
+      <p><b>Authkit</b> team</p>
+
+      <div>
+        <p style="font-size:0.8rem">
+          if you are having trouble clicking the "verify account" button, copy
+          and paste the url below into your web browser:
+          <br />
+          <a href={{link}}>{{link}}</a>
+        </p>
+      </div>
+
+    </div>
+  </body>
+</html>
