@@ -132,11 +132,12 @@ export const updateUser = asyncHandler(async (req, res) => {
   const user = await User.findById(req.user._id);
   if (user) {
     //user properties to update
-    const { name, bio, photo } = req.body;
+    const { name, bio, photo, isVerified } = req.body;
     //update user properties
     user.name = req.body.name || user.name;
     user.bio = req.body.bio || user.bio;
     user.photo = req.body.photo || user.photo;
+    user.isVerified = req.body.isVerified || user.isVerified;
 
     //save the updates
     const updated = await user.save();

@@ -1,2 +1,5 @@
-node_modules
-.env
+
+/auth-kit-frontend/.env
+/auth-kit-frontend/node_modules
+/backend/.env
+/backend/node_modules
